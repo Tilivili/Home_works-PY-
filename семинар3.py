@@ -42,13 +42,16 @@
 # элементов массива, больших предыдущего (элемента
 # с предыдущим номером) 
 
-# n = [0, -1, 5, 2, 3]
-# previous = n[0]
+# import random
+# N = int(input("Введите число элементов в массиве: "))
+# A = random.sample(range(1, 11), N)
+# previous = A[0]
 # count = 0
-# for num in n[1:]:
+# for num in A[1:]:
 #     if num > previous:
 #         count += 1
 #     previous = num
+# print(A)
 # print(count)
 
 
