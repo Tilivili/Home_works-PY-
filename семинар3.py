@@ -33,8 +33,11 @@
 # {"VI": "S005"}, {"VII": " S005 "}, {" V ":" S009 "}, {" VIII
 # ":" S007 "}] 
 
-# dict = {"V": "S001", "V": "S002", "VI": "S001", "VI": "S005", "VII": " S005 ", " V ":" S009 ", " VIII ":" S007 "}
-# uniques = set(dict.values())
+# dict = [{"V": "S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII": " S005 "}, {" V ":" S009 "}, {" VIII ":" S007 "}]
+# uniques = set()
+# for i in dict:
+#     print(i)
+#     uniques.add(list(i.values())[0])
 # print(uniques)
 
 # Задача №23. Дан массив, состоящий из целых чисел. Напишите
@@ -45,12 +48,10 @@
 # import random
 # N = int(input("Введите число элементов в массиве: "))
 # A = random.sample(range(1, 11), N)
-# previous = A[0]
 # count = 0
-# for num in A[1:]:
-#     if num > previous:
+# for i in range(1, len(A)):
+#     if A[i - 1] < A[i]:
 #         count += 1
-#     previous = num
 # print(A)
 # print(count)
 
