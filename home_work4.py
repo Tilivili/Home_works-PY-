@@ -28,26 +28,11 @@
 # Также нельзя использовать циклы.
 
 # def sum(a, b):
-#     c = 0
-#     if b == 0:
-#         return a
 #     if a == 0:
 #         return b
-#     if a > b and b == 1:
-#         c = a + 1
-#         return c
-#     elif a < b and a == 1:
-#         c = b + 1
-#         return c
-#     if a == b:
-#         c = (a + 1) + (a - 1)
-#         return c
-#     if a > b and b != 1:
-#         c = (a + 1) + (b - 1)
-#         return c
-#     elif a < b and a != 1:
-#         c = (b + 1) + (a - 1)
-#         return c
-# a = abs(int(input("Введите первое число: ")))
-# b = abs(int(input("Введите второе число: ")))
+#     return sum(a - 1, b + 1)
+
+# a = int(input("Введите число a: "))
+# b = int(input("Введите число b: "))
+
 # print(sum(a, b))
