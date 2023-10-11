@@ -17,7 +17,6 @@
 #                 sum_w += 1
 #         list_1.append(sum_w)
 #     return len(list_1) == list_1.count(list_1[0])
-
 # str_1 = input('Введите стих: ')
 # if rifm(str_1):
 #     print('Парам пам-пам')
@@ -32,6 +31,8 @@
 # ровно два аргумента, как, например, у операции умножения.
 
 # def print_operation_table(operation, num_rows=6, num_columns=6):
+#     if num_rows < 2 or num_columns < 2:
+#         print('ОШИБКА! Размерности таблицы должны быть больше 2!')
 #     a = [[operation(i, j) for j in range(1, num_columns + 1)] for i in range(1, num_rows + 1)]
 #     for i in a:
 #         print(*[f"{x:>3}" for x in i])
@@ -39,8 +40,20 @@
 # print_operation_table(lambda x, y: x * y)
 
 
+# def print_operation_table(operation, num_rows , num_columns ):
+#     if num_rows < 2 or num_columns < 2:
+#         print('ОШИБКА! Размерности таблицы должны быть больше 2!')
+#     else:
+#         print(' '.join([str(i) for i in range(1, num_columns + 1)]))
+#     for i in range(2, num_rows + 1):
+#         print(i, end = ' ')
+#     for j in range(2, num_columns + 1):
+#         print(operation(i, j), end = ' ')
 
-
+total = 0
+for i in range(1, 6):
+    total += i
+    print(total, end="")
 
 
 
